@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+  <!--bootstrap-->
+  <link href="vendor/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="vendor/sweet alert library/css file.css" rel="stylesheet"/>
+</head>
+
+<body>
+  <div class="add-course">
+    <div class="container">
+      <h1 class="mb-4">CRUD System</h1>
+      <form class="courseform">
+        <label for="course-name">Course Name<span class="text-danger">*</span></label>
+        <input type="text" class="form-control mb-3" id="course-name" placeholder="course name">
+       <Div class="small text-danger" id="nameAlert"></Div> 
+        
+       <label for="course-category">course category</label>
+        <input type="text" class="form-control mb-3" id="course-category" placeholder="course category">
+        <Div class="small text-danger" id="catAlert"></Div>
+
+        <label for="course-price">course price</label>
+        <input type="text" class="form-control mb-3" id="course-price" placeholder="course price">
+        <Div class="small text-danger" id="priceAlert"></Div>
+       
+        <label for="course-description">course description</label>
+        <input type="text" class="form-control mb-3" id="course-description" placeholder="course description">
+        <Div class="small text-danger" id="desAlert"></Div>
+
+        <label for="course-capacity">course capacity</label>
+        <input type="text" class="form-control mb-3" id="course-capacity" placeholder="course capacity">
+        <Div class="small text-danger" id="capAlert"></Div>
+
+        <div class="buttons">
+          <button type="submit" class="btn btn-outline-secondary mb-3" disabled id="click">Add course</button>
+          <button type="submit" class="btn btn-outline-info mb-3" id="update">update course</button>
+          <button type="reset" class="btn btn-outline-secondary mb-3">clear</button>
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <input type="search" placeholder="search..." id="search" class="form-control my-3">
+
+      <table class="table table table-striped">
+          <thead>
+              <tr>
+                  <th>#</th>
+                  <th>name</th>
+                  <th>category</th>
+                  <th>price</th>
+                  <th>description</th>
+                  <th>capacity</th>
+                  <th>update</th>
+                  <th>delete</th>
+              </tr>
+          </thead>
+          <button id="deleteBtn" class="btn btn-outline-danger text-center my-3">delete all</button>
+          <tbody id="data">
+              
+          </tbody>
+      </table>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+<script src="vendor/sweet alert library/sweetalert2.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
